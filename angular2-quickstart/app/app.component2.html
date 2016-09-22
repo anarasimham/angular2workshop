@@ -1,6 +1,8 @@
-<my-subcomponent (myevent)="handleMyEvent($event)" [inputStr]="abcd"></my-subcomponent>
+<!--<my-subcomponent (myevent)="handleMyEvent($event)" [inputStr]="abcd"></my-subcomponent>
+-->
 <h4 *ngFor="let item of numbers; let i = index">{{item}} is at idx {{i}}</h4>
 <h1 *ngIf="isComponent">My conditional is true</h1>
 <h1 *ngIf="!isComponent">My conditional is false</h1>
 <h2>Name: {{custom.name}}, number: {{custom.id}}</h2>
 <button [disabled]="isComponent" [ngClass]='classes'>My Button</button>
+<h3 (click)="addRowToList([1,2])">Click me</h3>
