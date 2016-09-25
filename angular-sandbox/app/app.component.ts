@@ -42,9 +42,9 @@ export class AppComponent2 {
     addRowToList(arg: Array<number>) {
         var val: string;
         if (Math.random() > .5) {
-            val = arg[0];
+            val = arg[0].toString();
         } else {
-            val = arg[1];
+            val = arg[1].toString();
         }
         this.numbers.push(val);
     }
